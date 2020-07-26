@@ -1,6 +1,6 @@
 # api5paisa
 
-Unoffical Browser Based Python API of 5paisa. 
+Unoffical Browser Based Python API of 5paisa.
 
 Its created live today morning only. https://youtube.com/watch?v=2PXSfi0Rsho
 Feel Free to Tweak it, Modify it and Add the rest of the missing functions to it at your pace.
@@ -23,7 +23,7 @@ username=''
 password=''
 twofa=''
 
-r=VerifyEmailStatus(s)
+r=VerifyEmailStatus(s,username)
 print(r.text)
 print(s.cookies.get_dict())
 

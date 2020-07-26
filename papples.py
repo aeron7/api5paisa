@@ -6,9 +6,9 @@ import json
 
 s =requests.Session()
 
-def VerifyEmailStatus(s):
+def VerifyEmailStatus(s,username):
     data={
-        "Email": "56289285"
+        "Email": str(username)
         }
     url="https://www.5paisa.com/Home/VerifyEmailStatus"
     r = s.post(url,data=data)

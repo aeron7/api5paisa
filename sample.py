@@ -5,7 +5,7 @@ username=''
 password=''
 twofa=''
 
-r=VerifyEmailStatus(s)
+r=VerifyEmailStatus(s,username)
 print(r.text)
 print(s.cookies.get_dict())
 
