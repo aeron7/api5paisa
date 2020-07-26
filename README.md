@@ -1,8 +1,9 @@
 # api5paisa
 
-Unoffical Browser Based Python API of 5paisa.
+Unoffical Browser Based Python API of 5paisa made at [Unofficed](https://unofficed.com/).
 
 Its created live today morning only. https://youtube.com/watch?v=2PXSfi0Rsho
+
 Feel Free to Tweak it, Modify it and Add the rest of the missing functions to it at your pace.
 
 ## Installation
@@ -41,11 +42,10 @@ print(s.cookies.get_dict())
 ```
 
 ## Documentation
-For Documentation and Sample Code, Refer - https://forum.unofficed.com/t/nsepython-documentation/376
+For Documentation and Sample Code, Refer - https://forum.unofficed.com/
 
 ## Contributing
 For Discussion and Improving this Code, Join - https://www.unofficed.com/chat/
-Alternatively, You can write your issue at - https://forum.unofficed.com
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
