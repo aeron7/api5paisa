@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name = 'api5paisa',
     packages=setuptools.find_packages(),
-    version = '0.0.8',
+    version = '0.0.9',
     include_package_data=True,
     description = 'Unoffical Browser Based Python API of 5paisa',
     long_description=long_description,
