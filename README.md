@@ -25,6 +25,7 @@ api.login("email or clientId", "passowrd", "dob in the format ddMMyyyy")
 order_response = api.order('SBIN', 170.2, 1)
 print(order_response)
 print(api.get_order_book())
+
 ```
 
 ## Documentation
