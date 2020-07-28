@@ -4,18 +4,24 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="api5paisa", # Replace with your own username
-    version="0.0.6",
-    author="Amit Ghosh",
-    description="5 paisa browser based api",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/aeron7/api5paisa",
+    name = 'api5paisa',
     packages=setuptools.find_packages(),
+    version = '0.0.6',
+    include_package_data=True,
+    description = 'Unoffical Browser Based Python API of 5paisa',
+    long_description=long_description,
+    long_description_content_type="text/markdown",  author = 'Aeron7',
+    author_email = 'hello@aeron7.com',
+    url = 'https://github.com/aeron7/api5paisa',
+    install_requires=['requests', 'pandas'],
+    keywords = ['5paisa', '5paisa api', 'python', 'sdk', 'trading', 'stock markets'],
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+      'Intended Audience :: Developers',
+      'Natural Language :: English',
+      'Operating System :: OS Independent',
+      'Programming Language :: Python',
+      'Programming Language :: Python :: 3',
+      'Programming Language :: Python :: Implementation :: PyPy',
+      'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    python_requires='>=3.6',
 )
