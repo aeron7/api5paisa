@@ -87,7 +87,12 @@ class Api5Paisa:
         self._lookup_one(scrip, 'C', 'N')
 
     def _revive_session(self):
-        self.post('/Trade/Home/_PartialWatchList', post_type='form', data='MWatchName=CE&IsExtendedView=false')
+        watch_list = self.post('/Trade/Home/GetMWatchName')
+        if watch_list['Status'] ==0 and len(watch_list["MarketWatchList"]) >0:
+            first_watch_list = watch_list["MarketWatchList"][0]['MwatchName']
+            self.post('/Trade/Home/_PartialWatchList', post_type='form', data='MWatchName=%s&IsExtendedView=false'%first_watch_list)
+            return
+        raise Exception('Unable to get watchlists')
 
     def _lookup_one(self, scrip, xtype, xchange):
         search_result = self.search(scrip, xtype, xchange)
