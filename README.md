@@ -22,6 +22,14 @@ from api5paisa import Api5Paisa
 api = Api5Paisa()
 api.login("email or clientId", "passowrd", "dob in the format ddMMyyyy")
 #for easy access create ~/.5paisa.conf and user api.login() refer examples/5paisa.conf
+
+#Get Margin
+print(api.get_margin())
+
+#Get Trade Book
+print(api.get_trade_book())
+
+#Firing Order
 order_response = api.order('SBIN', 170.2, 1)
 print(order_response)
 print(api.get_order_book())
