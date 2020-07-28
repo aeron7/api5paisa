@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="api5paisa", # Replace with your own username
-    version="0.0.1",
+    version="0.0.6",
     author="Amit Ghosh",
     description="5 paisa browser based api",
     long_description=long_description,
