@@ -1,3 +1,7 @@
+This does not work any more. They have changed their API's Login Schema. 
+
+Disclosure - https://forum.unofficed.com/t/unoffical-browser-based-python-api-of-5paisa/613
+
 # api5paisa
 
 Unoffical Browser Based Python API of 5paisa made at [Unofficed](https://unofficed.com/).
